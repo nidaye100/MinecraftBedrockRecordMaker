@@ -57,7 +57,7 @@ Through Minecraft's commands, you can obtain the custom records. For example, if
 ## Appendix
 Behavior Pack Directory Structure
 The behavior pack is a collection of files that define custom items, entities, and more in Minecraft Bedrock Edition. The items.json file needs to be placed in the items folder.
-
+```
 behavior_packs/
 └── MyBehaviorPack/                # Main folder of the behavior pack
     ├── manifest.json              # Required metadata file for the behavior pack
@@ -68,11 +68,11 @@ behavior_packs/
     ├── entities/                  # Folder for custom entity definitions (optional)
     ├── recipes/                   # Folder for custom recipes (optional)
     └── trading/                   # Folder for custom trading (optional)
-
+```
 
 Resource Pack Directory Structure
 The resource pack is a collection of files that define custom textures, sounds, and more for Minecraft Bedrock Edition. It is used to provide the sound and icon for the record.
-
+```
 resource_packs/
 └── MyResourcePack/                # Main folder of the resource pack
     ├── manifest.json              # Required metadata file for the resource pack
@@ -88,10 +88,10 @@ resource_packs/
     │       └── other_item.png     # Other item icons
     └── texts/                     # Folder for language files
         └── en_US.lang             # English language file
-
+```
         
 Overall Directory Structure
-
+```
 behavior_packs/
 └── MyBehaviorPack/
     ├── manifest.json
@@ -107,3 +107,4 @@ resource_packs/
     │   └── sounds.json
     ├── textures/
     │   └
+```
