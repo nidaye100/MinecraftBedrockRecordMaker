@@ -9,8 +9,8 @@ Save the custom songs in **OGG format** and name them with custom names (prefera
 
 #### How to Convert Song Files to OGG Format?
 Recommended tools:
- -**Audacity** (free, powerful) [Audacity Official](https://www.audacityteam.org/)
- -**Online Conversion Tools** (such as CloudConvert).
+ **Audacity** (free, powerful) [Audacity Official](https://www.audacityteam.org/)
+ **Online Conversion Tools** (such as CloudConvert).
 
 **File Path:**
 
