@@ -9,8 +9,8 @@ Save the custom songs in **OGG format** and name them with custom names (prefera
 
 #### How to Convert Song Files to OGG Format?
 Recommended tools:
-- **Audacity** (free, powerful) [Audacity Official](https://www.audacityteam.org/)
-- **Online Conversion Tools** (such as CloudConvert).
+ -**Audacity** (free, powerful) [Audacity Official](https://www.audacityteam.org/)
+ -**Online Conversion Tools** (such as CloudConvert).
 
 **File Path:**
 
@@ -23,7 +23,8 @@ CustomMusicPack/
                 ├── my_song_1.ogg
                 └── my_song_2.ogg
 
-###2. Create a Behavior Pack
+
+### 2. Create a Behavior Pack
 In addition to the resource pack, add a corresponding Behavior Pack to extend the game mechanics. In the behavior pack, modify the items.json to create a new playable item (similar to a record). You can batch-create the items.json file using the generate_items.exe program. Lastly, the items.json file must be placed in the items folder of the behavior pack.
 
 generate_items.exe Usage:
@@ -34,26 +35,26 @@ Corresponding sound event (e.g., custom.my_song_1).
 Record's item identifier (e.g., custom:my_record_1).
 The program will automatically generate an items.json file, saved in the directory you specify.
 
-###3. Create the Corresponding Resource Pack (Matching Step 1)
+### 3. Create the Corresponding Resource Pack (Matching Step 1)
 In the resource pack, define the sound event custom.my_song_1 (ensure the music file name placed in Step 1 matches the item identifier created in Step 2). Ensure that the behavior pack and resource pack match.
 
-###4. Use generate_sound.exe to Create the sounds.json File
+### 4. Use generate_sound.exe to Create the sounds.json File
 Place the generated sounds.json file in the sounds folder of the resource pack.
 
-###5. Item Skin (Icon)
+### 5. Item Skin (Icon)
 The skin of custom records is determined by Minecraft's image files (usually .png). You need to create an icon for each record and place it in the resource pack so it will display in the game.
 
 You need to place an icon in the textures/items folder in the resource pack, named to match the item identifier. For example, for custom:my_record_1, you can name the icon my_record_1.png and place it in the textures/items folder.
 
 Minecraft will automatically use this icon to display the item. Make sure the icon file name matches the item identifier so it will display as your custom icon.
 
-###6. Place on Server and Enable
+### 6. Place on Server and Enable
 Place the behavior pack and resource pack in the server's behavior_packs and resource_packs folders. Modify the server settings to force load them.
 
-###7. Use Commands to Get Custom Records
+### 7. Use Commands to Get Custom Records
 Through Minecraft's commands, you can obtain the custom records. For example, if you set the item identifier to custom:my_record_1 in the JSON files, you can obtain it in-game using the /give command.
 
-Appendix
+## Appendix
 Behavior Pack Directory Structure
 The behavior pack is a collection of files that define custom items, entities, and more in Minecraft Bedrock Edition. The items.json file needs to be placed in the items folder.
 
