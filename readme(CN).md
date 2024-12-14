@@ -13,7 +13,7 @@
 #### 如何将歌曲文件转换为 OGG 格式？
 推荐使用工具：
 Audacity（免费，功能强大）https://www.audacityteam.org/
-在线转换工具（如 CloudConvert）。
+或在线转换工具（如 CloudConvert）。
 
 文件路径：
 
