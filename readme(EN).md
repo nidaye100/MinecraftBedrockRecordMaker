@@ -22,7 +22,7 @@ CustomMusicPack/
             └── custom/
                 ├── my_song_1.ogg
                 └── my_song_2.ogg
-
+```
 
 ### 2. Create a Behavior Pack
 In addition to the resource pack, add a corresponding Behavior Pack to extend the game mechanics. In the behavior pack, modify the items.json to create a new playable item (similar to a record). You can batch-create the items.json file using the generate_items.exe program. Lastly, the items.json file must be placed in the items folder of the behavior pack.
