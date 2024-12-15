@@ -13,8 +13,8 @@
 #### 如何将歌曲文件转换为 OGG 格式？
 推荐使用工具：
 ```Audacity（免费，功能强大）https://www.audacityteam.org/
-或在线转换工具（如 CloudConvert）。```
-
+或在线转换工具（如 CloudConvert）。
+```
 文件路径：
 ```
 CustomMusicPack/
@@ -31,8 +31,8 @@ CustomMusicPack/
 可通过程序generate_items.exe批量创建items.json文件。
 最后，items.json 文件需要放入行为包的 items
 
-generate_items.exe使用方法：```
-Ⅰ. 双击运行 `generate_items.exe`。
+generate_items.exe使用方法：
+```Ⅰ. 双击运行 `generate_items.exe`。
 Ⅱ. 根据提示依次输入：
    - 自定义歌曲标识符（如：my_song_1）。
    - 对应的音效事件（如：custom.my_song_1）。
