@@ -36,7 +36,8 @@ generate_items.exe使用方法：
 Ⅱ. 根据提示依次输入：
    ```- 自定义歌曲标识符（如：my_song_1）。
    - 对应的音效事件（如：custom.my_song_1）。
-   - 唱片的物品标识符（如：custom:my_record_1）。```
+   - 唱片的物品标识符（如：custom:my_record_1）。
+```
 Ⅲ. 程序会自动生成一个 `items.json` 文件，保存在你指定的目录中。
 
 
