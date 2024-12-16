@@ -54,19 +54,21 @@ Python 安装时会在 Scripts 目录下安装工具（如 pyinstaller）。你�
 
 ### 3.1 使用 --icon 参数来指定一个自定义图标，用以更改使用 PyInstaller 打包的 .exe 文件的图标。
 ***步骤***
-####3.1.1 准备图标文件
+#### 3.1.1 准备图标文件
+```
 确保你有一个 .ico 格式的图标文件。如果你有一个 .png 或其他格式的图片，你可以通过在线工具或图标转换软件将其转换为 .ico 格式。
 
 有很多在线工具可以帮助你将图片转换为 .ico 格式。例如：
 ConvertICO （https://convertico.com/）或 ICO Convert（https://www.icoconvert.com/）
-
-####3.1.2使用 PyInstaller 打包时指定图标
+```
+#### 3.1.2使用 PyInstaller 打包时指定图标
+```
 使用 PyInstaller 打包你的 Python 脚本时，添加 --icon 参数来指定自定义图标文件。例如：
 pyinstaller --onefile --icon=your_icon.ico your_script.py
-```
+
 --onefile 参数用于将 Python 脚本打包成一个单独的 .exe 文件（可选，具体取决于你的需求）。
 --icon=your_icon.ico 指定了你要使用的图标文件。
-```
+
 如果你已经打包了 .exe 文件并且希望更改图标，那么你需要重新打包，使用新的图标文件。
 PyInstaller 并不支持在已打包的 .exe 文件中直接更改图标，因此你必须重新使用正确的 --icon 参数来打包。
 在每次打包时会同时生成一些用作打包配置的中间文件，如build文件夹和.spec文件。如若需要重新打包，请在打包前删除这些文件以防干扰。
@@ -75,8 +77,9 @@ PyInstaller 并不支持在已打包的 .exe 文件中直接更改图标，因�
 pyinstaller --clean --onefile --icon=your_icon.ico your_script.py
 
 若任然没有更新，可以尝试重启该cmd或计算机并再次打包。
-
+```
 ***关于生成的文件***
+```
 dist/ 文件夹：
 这是最终的输出文件夹，里面包含了你打包后的 .exe 文件。
 例如，如果你打包的程序是 generate_items.py，那么你会在 dist 文件夹里找到 generate_items.exe。
@@ -96,14 +99,14 @@ build/：临时文件夹，包含中间文件，可以删除。
 generate_items.spec：如果你不打算修改打包配置，可以删除。
 你只需要保留 dist/ 文件夹中的 .exe 文件，它是程序的最终可执行文件。
 
-
+```
 ### 3.2完善程序属性
-
+```
 在 Windows 文件的属性中，文件版本、文件名称和版权等信息是通过修改文件的元数据来设置的。
 对于 .exe 文件来说，设置这些信息通常需要在打包时提供相关的配置信息。
 这些元数据可以通过在 PyInstaller 打包时使用 --version-file 参数，或使用其他工具来为 .exe 文件添加。
 PyInstaller 并没有直接提供命令行选项来设置文件版本信息和版权等。但是你可以通过以下方法来为 .exe 文件添加版本信息和版权信息.
-
+```
 #### 3.2.1使用 PyInstaller 设置文件版本信息
 
 ##### Ⅰ创建一个版本信息文件：
@@ -112,12 +115,14 @@ PyInstaller 并没有直接提供命令行选项来设置文件版本信息和�
 
 
 ##### Ⅱ生成版本文件：
+```
 在 PyInstaller 打包时，通过 --version-file 参数指定一个版本文件。
 你可以手动创建一个 .rc 文件，或者使用 PyInstaller 生成一个基本的版本信息文件。
 使用以下命令来打包你的程序，并为 .exe 文件添加版本信息：
 pyinstaller --onefile --noconsole --icon=cd.ico --version-file=version.txt generate_items.py
-
+```
 ***书写建议***
+```
 在 .exe 文件中设置的版本信息、公司名称、产品名称、版权等信息，通常是为了提供一些有关软件的基本元数据。
 这些信息本身并不具备法律效力，但是它们在某些场景下（比如软件分发、版权声明、版本控制等）会起到重要作用。它们的作用和书写建议如下：
 
