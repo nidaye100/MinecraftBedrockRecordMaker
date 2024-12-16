@@ -176,6 +176,7 @@ pyinstaller --onefile --noconsole --icon=cd.ico --version-file=version.txt gener
 样版：
 ```
 # UTF-8
+```
 VSVersionInfo(
   ffi=FixedFileInfo(
     filevers=(1, 0, 0, 0),
