@@ -1,10 +1,11 @@
 # 如何将 Python 文件打包为 .exe 可执行程序？
 
 ## 1.确认环境
+```
 在python官网下载python https://www.python.org/downloads/，
 勾选自动创建路径选项并安装。之后可以在cmd中输入python -version
 来确认是否安装成功。
-
+```
 ### 如果不是在官网，如微软市场下载的python，需要手动配置环境。
 ```
 Ⅰ打开cmd，输入where python获得安装路径并复制，
@@ -13,6 +14,7 @@
 双击后点击新建，粘贴已复制的安装路径。
 ```
 ### 确认 pyinstaller 是否安装
+```
 可以在命令行中运行以下命令来检查：pip show pyinstaller
 如果 pyinstaller 没有安装，可以使用以下命令来安装：pip install pyinstaller
 
@@ -20,15 +22,16 @@
 你可以尝试通过 python -m PyInstaller 来代替直接调用 pyinstaller。例如：python -m PyInstaller --version
 如果能够成功运行，则说明 pyinstaller 已经正确安装，只是路径没有添加到系统的环境变量中。
 如果不能成功运行，则需要添加 Python 和 Scripts 目录到环境变量。
-
+```
 ***关于检查 Scripts 目录：***
+```
 Python 安装时会在 Scripts 目录下安装工具（如 pyinstaller）。你可以通过以下路径找到 Scripts 目录：
 如果你使用的是 Microsoft Store 安装的 Python，通常路径类似于 C:\Users\buquz\AppData\Local\Microsoft\WindowsApps\Scripts。
 你需要将 Python 的 Scripts 目录添加到系统环境变量 PATH 中，这样 pyinstaller 等工具才能在命令行中被识别。
 注意：where scripts 命令是用来查找 scripts 可执行文件的位置，但它可能无法找到该文件夹，因为你正在查找的实际上是一个目录，而不是一个可执行文件。
 
 在cmd中可通过 echo %PATH% 来查看PATH 环境变量。
-
+```
 ***在更改环境变量之后需要重启cmd，否则结果不会更新***
 
 ## 2.打包 Python 脚本
