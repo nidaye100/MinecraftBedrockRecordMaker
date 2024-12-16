@@ -7,7 +7,7 @@
 
 ### 如果不是在官网，如微软市场下载的python，需要手动配置环境。
 Ⅰ打开cmd，输入where python获得安装路径并复制，
-例如：C:\Users\<你的用户名>\AppData\Local\Programs\Python\Python<版本号>。
+```例如：C:\Users\<你的用户名>\AppData\Local\Programs\Python\Python<版本号>。```
 Ⅱ右键计算机（此电脑），点击属性，找到高级系统设置，点击环境变量。在下方系统变量中找到path，
 双击后点击新建，粘贴已复制的安装路径。
 
