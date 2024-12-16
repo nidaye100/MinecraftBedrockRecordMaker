@@ -209,6 +209,7 @@ VSVersionInfo(
 
 ```
 ***关键点解释***
+```
 VSVersionInfo 的结构:
 
 它是一个嵌套结构，包含 FixedFileInfo 和 StringFileInfo，后者又包含 StringTable 和 StringStruct。
@@ -225,3 +226,4 @@ ProductName：产品名称。
 
 1033 表示英语 (美国)。
 1200 表示 Unicode。
+```
