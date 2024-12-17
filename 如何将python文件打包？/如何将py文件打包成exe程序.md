@@ -1,11 +1,14 @@
 # 如何将 Python 文件打包为 .exe 可执行程序？
 
 ## 1.确认环境
-```
-在python官网下载python https://www.python.org/downloads/，
-勾选自动创建路径选项并安装。之后可以在cmd中输入python -version
-来确认是否安装成功。
-```
+
+在python官网下载python https://www.python.org/downloads/，  
+勾选自动创建路径选项并安装。之后可以在cmd中输入  
+```bash
+python -version
+``` 
+来确认是否安装成功。  
+
 ### 如果不是在官网，如微软市场下载的python，需要手动配置环境。
 ```
 Ⅰ打开cmd，输入where python获得安装路径并复制，
