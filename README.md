@@ -1,3 +1,7 @@
+<p align="right">
+  <a href="./README_zh.md">简体中文</a> | <a href="./README.md">English</a>
+</p>
+
 # Minecraft Bedrock Edition Custom Record Creation Guide
 
 If you don't want to replace the existing records but wish to **add entirely new custom records**, Minecraft Bedrock Edition allows you to load custom music by naming the records. You can import custom music without interfering with existing records by "naming and loading different sound files," but you will still need to use a resource pack.
